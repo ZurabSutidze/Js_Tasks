@@ -1,21 +1,21 @@
 /////////////////////////////////////// DeBouncer ////////////////////////////////////////
 
-function debounce(delay, cd) {
-    let timer;
-    return (...args) => {
-      clearTimeout(timer);
-      timer = setTimeout(() => {
-        cd(...args);
-      }, delay);
-    };
-  }
+// function debounce(delay, cd) {
+//     let timer;
+//     return (...args) => {
+//       clearTimeout(timer);
+//       timer = setTimeout(() => {
+//         cd(...args);
+//       }, delay);
+//     };
+//   }
 
-  function LogCordinates(event) {
-     console.log(`coordinates:  x-${event.clientX}, y-${event.clientY}`);
-  }
-  const debouncedCordinates = debounce(1000 , LogCordinates);
+//   function LogCordinates(event) {
+//      console.log(`coordinates:  x-${event.clientX}, y-${event.clientY}`);
+//   }
+//   const debouncedCordinates = debounce(1000 , LogCordinates);
 
-  document.addEventListener('mousemove', debouncedCordinates);
+  // document.addEventListener('mousemove', debouncedCordinates);
 
 ///////////////////////////////////////////////////       2 Fetch      /////////////////////////////////////////////////////////////
 
